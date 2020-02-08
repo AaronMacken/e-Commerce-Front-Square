@@ -1,0 +1,126 @@
+/* --------------------------- HEADER SECTION --------------------------- */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+  color: #fff;
+  /* "https://thumbs.dreamstime.com/z/image-medicinal-cannabis-extract-oil-formula-cbd-cannabinol-cannabidiol-growing-marijuana-hemp-antioxidant-products-138777654.jpg */
+  /* background-image: linear-gradient(to bottom, #000000ab, #000000b4),
+    url("/backgroundp.jpg"); */
+  background-image: url("/backgroundpc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+}
+
+.landing-col {
+  min-height: 80vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-title {
+  color: #fff;
+  font-family: serif;
+  text-align: center;
+  font-size: 10rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.header-sub {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* --------------------------- PRODUCT LIST --------------------------- */
+
+.product-list-section {
+  margin: 2rem auto;
+  min-height: 50rem;
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+
+.product-list-section-title {
+  font-size: 350%;
+  margin: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: serif;
+}
+
+.product-list-section-title:after {
+  display: block;
+  height: 2px;
+  background-color: #5c9c55;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.shop-all-btn-wrapper {
+  margin: 4rem auto 2rem auto;
+  width: 75%;
+}
+
+/* ----------------- FUN FACTS ---------------- */
+
+.fun-facts-section {
+  min-height: 50rem;
+  background-color: #ECEEF1;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 975px) {
+  .landingPage {
+    /* background-color: #f5f5f5; */
+  }
+  .product-list-section {
+    /* background-color: #f5f5f5; */
+    margin: 0;
+  }
+  .shop-all-btn-wrapper {
+    margin: 1rem auto 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .landing-col {
+    justify-content: space-evenly;
+  }
+  .header-title {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .header-title {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header-title {
+    font-size: 6rem;
+  }
+}

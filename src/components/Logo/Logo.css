@@ -1,0 +1,16 @@
+.brand-text {
+  margin: 0;
+  color: rgb(128, 190, 121);
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 400px) {
+  .brand-text {
+    font-size: 4rem;
+  }
+}
+

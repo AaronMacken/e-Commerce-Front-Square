@@ -1,0 +1,152 @@
+
+
+.paper-s {
+  overflow: scroll;
+  /* max-width: 90vw;
+  width: 90vw;
+  height: 90vh; */
+  border-radius: 5px;
+}
+
+.sq-fieldset,
+.sqm-customer {
+  height: 100%;
+}
+
+.sqm-payment {
+  margin: auto;
+}
+
+.sqm-customer,
+.sqm-payment {
+  padding: 1rem;
+}
+
+.sqm-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  margin-bottom: 0;
+}
+
+.sqm-label,
+.sq-label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.sqm-input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: #373f4a;
+  background-color: transparent;
+  line-height: 2.4rem;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e2e3;
+  border-radius: 4px;
+  outline-offset: -2px;
+  display: inline-block;
+  transition: border-color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.sqm-input:focus{
+  border: 1px solid #4a90e2;
+  outline: 0;
+}
+
+.sq-input {
+  box-sizing: border-box;
+  border: 1px solid #E0E2E3;
+  border-radius: 4px;
+  outline-offset: -2px;
+  display: inline-block;
+  -webkit-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  -moz-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  -ms-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  transition: border-color .2s ease-in-out, background .2s ease-in-out;
+}
+
+.sq-input--focus {
+  border: 1px solid #4A90E2;
+  background-color: rgba(74,144,226,0.02);
+}
+
+.section-h3 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.sq-error-message {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 14px;
+  color: red;
+  font-weight: 500;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.sq-creditcard {
+  width: 100%;
+  height: 56px;
+  margin-top: 10px;
+  background: #4A90E2;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+  border: 0;
+}
+
+.sq-creditcard:hover {
+  background-color: #4281CB;
+}
+
+.square-img {
+  height: 25rem;
+  width: auto;
+}
+
+.square-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 1279px) {
+  .square-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .square-info-p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .paper-s {
+    height: 75vh;
+  }
+}

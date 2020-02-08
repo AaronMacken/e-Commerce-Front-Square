@@ -1,0 +1,19 @@
+.fa-times {
+  font-size: 1.75rem;
+  color: rgb(189, 189, 189);
+  animation: all .2s;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+
+.fa-times:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 475px) {
+  .fa-times {
+    align-self: end;
+    margin-right: 1.5rem;
+  }
+}

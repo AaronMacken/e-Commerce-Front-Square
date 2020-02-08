@@ -1,0 +1,47 @@
+.qty-selector-wrapper {
+
+}
+
+.qty-input {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  height: auto;
+}
+
+.qty-input:focus {
+  outline: none;
+}
+
+.counter-btn {
+  background: white;
+  border: 1px solid #c3c3c3;
+  border-radius: 100%;
+  margin: 5px 5px;
+  padding: 0px;
+  height: 23px;
+  width: 23px;
+  line-height: 0px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.counter-btn:focus {
+  outline: none;
+}
+
+.decrement {
+  /* padding-bottom: 5px; */
+}
+
+.increment {
+  padding-left: 1px;
+  padding-bottom: 1px;
+}
+
+@media only screen and (max-width: 450px) {
+  .qty-input {
+    width: 50%;
+  }
+}

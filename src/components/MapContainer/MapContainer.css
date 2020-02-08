@@ -1,0 +1,26 @@
+.gmap-wrapper {
+    position: relative;
+    height: 50rem;
+    width: 50rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .gmap-wrapper {
+        height: 40rem;
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .gmap-wrapper {
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .gmap-wrapper {
+        height: 30rem;
+        width: 30rem;
+    }
+}

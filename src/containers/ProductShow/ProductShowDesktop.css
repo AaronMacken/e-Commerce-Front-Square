@@ -1,0 +1,48 @@
+.product-show-page {
+    min-height: 50rem;
+}
+
+.image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   min-height: 60rem;
+}
+
+.data-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5rem;
+    min-height: 50rem;
+}
+
+.image-ps {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 3px;
+    margin-top: 2rem;
+}
+
+.description-ps {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.data-div-1 {
+    font-size: 3rem;
+}
+
+.button-col-ps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-col-ps-st {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
