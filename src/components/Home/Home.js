@@ -49,7 +49,7 @@ export default class Landing extends Component {
         <section className="fun-facts-section">
           <Grid container spacing={3}>
           <FunFact heading="Who We Are" text="We are a family owned CBD dispensary located in Winston-Salem North Carolina, USA." icon="fas fa-globe-americas"/>
-            <FunFact heading="Products" text="We carry a wide variety of CBD products, including: flowers, tinctures, salves and edibles." icon="fas fa-cannabis"/>
+            <FunFact heading="Products" text="We carry a wide variety of CBD products, including: tinctures, salves, edibles and more." icon="fas fa-cannabis"/>
             <FunFact heading="Free Shipping" text="We are happy to offer FREE SHIPPING on orders of $60 or more!" icon="fas fa-shipping-fast"/>
             <FunFact heading="Age Limit" text="All products are intended for adults over the age of 21 and up." icon="fas fa-user-plus"/>
           </Grid>
