@@ -2,9 +2,9 @@
 
 .paper-s {
   overflow: scroll;
-  max-width: 90vw;
+  /* max-width: 90vw;
   width: 90vw;
-  height: 90vh;
+  height: 90vh; */
   border-radius: 5px;
 }
 
