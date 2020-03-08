@@ -8,7 +8,7 @@ const Items = ({ items, loading }) => {
     let products = items.map((e) => (
         <Grid item xs={12} md={4} lg={4} key={e._id}>
             <ProductListItem img={e.productImage}
-                title={e.title} price={e.price} id={e._id} />
+                title={e.title} price={e.price} id={e._id} category={e.category}/>
         </Grid>
     ))
     if (loading) {

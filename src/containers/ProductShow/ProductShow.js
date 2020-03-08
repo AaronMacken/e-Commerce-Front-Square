@@ -16,7 +16,8 @@ export default class ProductShow extends Component {
             productName: "",
             price: null,
             description: "",
-            img: ""
+            img: "",
+            category: ""
         };
         this.updatePredicate = this.updatePredicate.bind(this);
     }
@@ -32,7 +33,8 @@ export default class ProductShow extends Component {
                         productName: res.data.title,
                         price: res.data.price,
                         description: res.data.description,
-                        img: res.data.productImage
+                        img: res.data.productImage,
+                        category: res.data.category
                     })
                     this.setState({ isLoading: false })
                 })

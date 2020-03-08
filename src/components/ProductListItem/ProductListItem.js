@@ -49,7 +49,7 @@ class ProductListItem extends Component {
   }
 
   render() {
-    const { img, title, price, id } = this.props;
+    const { img, title, price, id, category } = this.props;
     return (
       <li className="product-list-item" id={id}>
 
