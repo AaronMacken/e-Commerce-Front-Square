@@ -63,6 +63,7 @@ class ProductShowMobile extends Component {
                             <p>{`$${this.props.price}`}</p>
 
                             <p className="description-ps">{`${this.props.description}`}</p>
+                            <p className="description-ps"><span style={{fontWeight: "bold"}}>Category: </span>{`${this.props.category}`}</p>
                             <div style={{ marginBottom: "2rem" }}>
                                 <div className="qty-selector-wrapper">
                                     <button
