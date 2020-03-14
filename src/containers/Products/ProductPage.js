@@ -49,7 +49,7 @@ const Products = () => {
       ></input>
       <Items items={currentItems} loading={loading} />
       <Pagination itemsPerPage={itemsPerPage} totalItems={items.length}
-        paginate={paginate}
+        paginate={paginate} currentPage={currentPage}
       />
     </div>
   );
