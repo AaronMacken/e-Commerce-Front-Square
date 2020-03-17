@@ -29,6 +29,11 @@ const Products = () => {
     return product.title.toLowerCase().indexOf(searchBarValue.toLowerCase()) !== -1;
   });
 
+  function searchItems(e) {
+    setSearchBarValue(e.target.value);
+    setCurrentPage(1)
+  }
+
   // get current posts
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -37,18 +42,17 @@ const Products = () => {
   // change page
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-
   }
   return (
     <div className="products-page">
       <Title text={'Products'} />
       <input type="text" value={searchBarValue}
-        onChange={e => setSearchBarValue(e.target.value)}
+        onChange={e => searchItems(e)}
         placeholder="Search products"
         className="filterInput"
       ></input>
       <Items items={currentItems} loading={loading} />
-      <Pagination itemsPerPage={itemsPerPage} totalItems={items.length}
+      <Pagination itemsPerPage={itemsPerPage} totalItems={filteredProducts.length}
         paginate={paginate} currentPage={currentPage}
       />
     </div>
