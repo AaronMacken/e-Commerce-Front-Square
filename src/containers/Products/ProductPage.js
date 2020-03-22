@@ -4,6 +4,7 @@ import Title from '../../components/Title/Title';
 import axios from 'axios';
 import Items from './Items';
 import Pagination from './Pagination';
+import CategoryList from "./CategoryList";
 
 
 const Products = () => {
@@ -14,7 +15,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
   const [categoryFilter, setCategoryFilter] = useState("All");
-  
+
   // call useEffect to get json from api - aka componentDidMount
   useEffect(() => {
     const fetchPosts = async () => {
