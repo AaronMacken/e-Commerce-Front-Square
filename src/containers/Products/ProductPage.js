@@ -26,12 +26,22 @@ const Products = () => {
   }, [])
 
   let filteredProducts = items.filter(product => {
-    return product.title.toLowerCase().indexOf(searchBarValue.toLowerCase()) !== -1;
+    if(categoryFilter.toLowerCase() == "all") {
+      return product.title.toLowerCase().indexOf(searchBarValue.toLowerCase()) !== -1;
+    } else {
+      if(categoryFilter.toLowerCase() == product.category.toLowerCase()) {
+        return product.title.toLowerCase().indexOf(searchBarValue.toLowerCase()) !== -1;
+      }
+    }
   });
 
   function searchItems(e) {
     setSearchBarValue(e.target.value);
     setCurrentPage(1)
+  }
+
+  function update(e) {
+    setCategoryFilter(e)
   }
 
   // get current posts
@@ -46,6 +56,7 @@ const Products = () => {
   return (
     <div className="products-page">
       <Title text={'Products'} />
+      <CategoryList update={update} activeCategory={categoryFilter} categories={["All", "Flowers", "Tinctures", "Cartridges", "Topicals", "Edibles", "Pet Edibles", "Misc"]}  />
       <input type="text" value={searchBarValue}
         onChange={e => searchItems(e)}
         placeholder="Search products"

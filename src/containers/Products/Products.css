@@ -17,7 +17,31 @@
   margin-bottom: 3rem;
 }
 
-
 .filterInput:focus {
-    outline: none;
+  outline: none;
+}
+
+.category-list {
+  width: 75%;
+  margin: auto;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #9f9f9f;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.active-category {
+  font-weight: 400;
+  color: #5b9c55;
+}
+
+.category-link {
+  cursor: pointer;
+}
+
+.category-link:hover {
+  color: #5b9c55;
+  font-weight: 400;
 }
