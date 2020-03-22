@@ -44,6 +44,7 @@ const Products = () => {
 
   function update(e) {
     setCategoryFilter(e)
+    setCurrentPage(1);
   }
 
   // get current posts
