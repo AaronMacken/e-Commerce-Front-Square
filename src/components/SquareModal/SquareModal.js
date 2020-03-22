@@ -92,8 +92,8 @@ export default class SquareModal extends Component {
                         <p className="transition-modal-description">If you have any questions, please call (336) 661-8043</p>
                         {/* <SquarePaymentForm
                             sandbox={true}
-                            applicationId="sandbox-sq0idb-Y0RbWZ6CG8G-mxBSzHelDQ"
-                            locationId="BHXWX6S2G8A4F"
+                            applicationId="place ID here"
+                            locationId="place Location ID here"
                             cardNonceResponseReceived={this.cardNonceResponseReceived}
                         >
                             <Grid container spacing={0} className="sq-fieldset">
