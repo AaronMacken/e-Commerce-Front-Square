@@ -13,7 +13,8 @@ const Products = () => {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
-
+  const [categoryFilter, setCategoryFilter] = useState("All");
+  
   // call useEffect to get json from api - aka componentDidMount
   useEffect(() => {
     const fetchPosts = async () => {
